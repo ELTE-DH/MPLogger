@@ -27,7 +27,7 @@ On Windows or without Make (after cloning the repository):
 ### Single-process
 
 ```python
-from MLPlogger import Logger
+from mplogger import Logger
 
 # Initialize logger (default: STDERR only with INFO level)
 logger = Logger(log_filename, logfile_mode, logfile_encoding, logfile_level, console_stream, console_level, console_format, file_format)
@@ -43,7 +43,7 @@ logger.log('CRITICAL', 'Can also set line endings!', end='\r\n')
 from itertools import repeat
 from multiprocessing import Pool, Manager, current_process
 
-from MLPlogger import Logger
+from mplogger import Logger
 
 def worker_process(par):
     state, lq = par

@@ -13,7 +13,7 @@ Python 3.8+ is required
 
 [_Poetry_](https://python-poetry.org/) and (optionally) [_GNU Make_](https://www.gnu.org/software/make/) are required.
 
-1. `git clone https://github.com/ELTE-DH/webarticlecurator.git`
+1. `git clone https://github.com/ELTE-DH/MPLogger.git`
 2. Run `make`
 
 On Windows or without Make (after cloning the repository):

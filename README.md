@@ -37,6 +37,20 @@ logger.log('WARNING', 'THIS IS A WARNING!', 'In multiple lines', 'just like prin
 logger.log('CRITICAL', 'Can also set line endings!', end='\r\n')
 ```
 
+### Dummy-logger
+
+```python
+from mplogger import DummyLogger
+
+# Initialize logger (accepts any params)
+logger = DummyLogger()
+
+# Log function has the same API, but nothing happens
+logger.log('INFO', 'First argument log level as string')
+logger.log('WARNING', 'THIS IS A WARNING!', 'In multiple lines', 'just like print()', sep='\n')
+logger.log('CRITICAL', 'Can also set line endings!', end='\r\n')
+```
+
 ### Multi-process
 
 ```python

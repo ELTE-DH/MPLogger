@@ -145,3 +145,12 @@ class Logger:
             h.flush()
             if isinstance(h, logging.FileHandler):
                 h.close()
+
+
+class DummyLogger(Logger):
+    """Dummy logger as a default class"""
+    def __init__(self, *_, **__):
+        super().__init__()
+
+    def log(self, *_, **__):
+        pass
